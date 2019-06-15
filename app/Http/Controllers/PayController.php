@@ -53,4 +53,8 @@ class PayController extends Controller
 
         dd($response);
     }
+
+    public function postPay(){
+        return view('status');
+    }
 }

@@ -21,4 +21,4 @@ Route::get('pay-success', 'PayController@success');
 Route::get('event', 'PayController@index');
 Route::post('pay', 'PayController@pay');
 Route::get('pay-success', 'PayController@success');
-Route::get('status', 'PayController@pay');
+Route::get('status', 'PayController@postPay');

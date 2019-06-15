@@ -20,50 +20,32 @@
     <div class="row">
         <div class="col-lg-12 mt40">
             <div class="card-header" style="background: #0275D8;">
-                <h2>Register for Event</h2>
+                <h2>Payment Status for Event</h2>
             </div>
         </div>
     </div>
 
-<?php /* @if ($errors->any())
-        <div class="alert alert-danger">
-            <strong>Opps!</strong> Something went wrong<br>
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif*/ ?>
 
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <strong>Name</strong>
-                    <input type="text" name="name" class="form-control" placeholder="Enter Name" required>
+                    <strong>Payment staus</strong>
+                    <p><?php echo $_GET['payment_status'];?></p>
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="form-group">
-                    <strong>Mobile Number</strong>
-                    <input type="text" name="mobile_number" class="form-control" placeholder="Enter Mobile Number" required>
+                    <strong>Payment Id</strong>
+                    <p><?php echo $_GET['payment_id'];?></p>
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="form-group">
-                    <strong>Email Id</strong>
-                    <input type="text" name="email" class="form-control" placeholder="Enter Email id" required>
+                    <strong>Payment request ID</strong>
+                    <p><?php echo $_GET['payment_request_id'];?></p>
                 </div>
             </div>
-            <div class="col-md-12">
-                <div class="form-group">
-                    <strong>Event Fees</strong>
-                    <input type="text" name="amount" class="form-control" placeholder="Enter Fees" required>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
+
         </div>
 </div>
 
